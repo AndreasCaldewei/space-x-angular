@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" >
+  <button *ngIf="breakpoints$ | async" mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+
+</mat-toolbar>
+
+
+<mat-drawer-container [hasBackdrop]="breakpoints$ | async">
+  <mat-drawer [opened]="!(breakpoints$ | async)" #drawer [mode]="mode$ | async">
+
+
+
+      <mat-list role="list">
+        <mat-list-item role="listitem">Capsules</mat-list-item>
+        <mat-list-item role="listitem">Cores</mat-list-item>
+        <mat-list-item role="listitem">Dragons</mat-list-item>
+      </mat-list>
+
+
+
+
+
+  </mat-drawer>
+  <mat-drawer-content>
+
+    <ng-content>
+
+    </ng-content>
+
+  </mat-drawer-content>
+
+</mat-drawer-container>
+

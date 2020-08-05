@@ -1,0 +1,11 @@
+
+
+
+<div class="container">
+  <div>
+    <ng-container *ngFor="let dragon of dragons$ | async">
+      <app-dragons-card [dragon]="dragon" ></app-dragons-card>
+    </ng-container>
+  </div>
+</div>
+

@@ -1,0 +1,21 @@
+
+
+
+mat-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  border-right: 1px solid #b4b4b4;
+  background: #fafafa
+}
+
+mat-drawer-content {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+
+}

@@ -1,0 +1,26 @@
+
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar></div>
+    <mat-card-title>
+      {{dragon.name}}
+    </mat-card-title>
+
+    <mat-card-subtitle>
+      First flight: {{dragon.first_flight}}
+    </mat-card-subtitle>
+  </mat-card-header>
+
+
+
+
+  <mat-card-content>
+    <p>
+      {{dragon.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button [href]="dragon.wikipedia">WIKIPEDIA</a>
+    <button mat-button [routerLink]="[dragon.id]">DETAIL</button>
+  </mat-card-actions>
+</mat-card>
